@@ -1,0 +1,164 @@
+.chat {
+  flex: 2;
+  border-left: 1px solid #dddddd35;
+  border-right: 1px solid #dddddd35;
+  height: 100%;
+  display: flex;
+flex-direction: column;
+  .top {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px  solid #dddddd35;
+    .user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        span{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #a5a5a5a5;
+        }
+      }
+    }
+    .icons {
+        display: flex;
+        gap: 20px;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+        
+    }
+  }
+
+  .center{
+padding: 20px;
+flex: 1;
+overflow-y: scroll;
+display: flex;
+flex-direction: column;
+
+
+
+
+gap: 20px;
+.message{
+  max-width: 70%;
+  display:flex ;
+  gap: 20px;
+  &.own{
+    align-self:flex-end;
+    .texts{
+      p{
+        background-color: #5183fe;
+      }
+    }
+  }
+
+  img{width: 30px;
+  height: 30px;
+border-radius: 50%;
+object-fit: cover;
+}
+.texts{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  p{
+    padding: 20px;
+    background: rgba(17, 25, 40, 0.3);
+    border-radius:10px ;
+  }
+span {
+  font-size:13px ;
+}
+}
+
+}
+
+  }
+  
+
+  .bottom{
+    border-top: 1px solid #dddddd35;
+
+padding: 20px;
+gap: 20px;
+display: flex; align-items: center;
+justify-content: space-between;
+margin-top: auto;
+
+input{
+  flex: 1;
+  background-color: rgba(17,25,40,0.5);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  
+
+}
+.emoji img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.emoji{
+  position: relative;
+  .picker{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+  }
+}
+
+.sendButton{
+  background-color: #5183fe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+  }
+ 
+
+}
+ 
+
+.center::-webkit-scrollbar-track {
+
+background:grey;
+
+}
+.center::-webkit-scrollbar-thumb {
+  background:#5183fe; 
+}
+.center::-webkit-scrollbar {
+
+width: 10px;
+
+}
